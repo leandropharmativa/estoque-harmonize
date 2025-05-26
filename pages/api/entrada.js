@@ -68,4 +68,4 @@ res.status(200).json({ sucesso: true })
       detalhe: JSON.stringify(err, Object.getOwnPropertyNames(err))
     })
   }
-
+}
