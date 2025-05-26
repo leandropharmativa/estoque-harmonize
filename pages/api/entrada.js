@@ -1,4 +1,3 @@
-// /pages/api/entrada.js
 import { google } from 'googleapis'
 
 export default async function handler(req, res) {
@@ -39,7 +38,7 @@ export default async function handler(req, res) {
 
     if (index >= 0) {
       const novaQtd = parseFloat(rows[index][1] || 0) + parseFloat(quantidade)
-      const novoValor = parseFloat(valorUnitario) // Atualiza valor unitário
+      const novoValor = parseFloat(valorUnitario)
       await sheets.spreadsheets.values.update({
         spreadsheetId,
         range: `EstoqueAtual!B${index + 1}:C${index + 1}`,
@@ -60,7 +59,8 @@ export default async function handler(req, res) {
       })
     }
 
-res.status(200).json({ sucesso: true })
+    res.status(200).json({ sucesso: true })
+
   } catch (err) {
     console.error('❌ ERRO COMPLETO:', err)
     res.status(500).json({
