@@ -60,12 +60,12 @@ export default async function handler(req, res) {
       })
     }
 
-    res.status(200).json({ sucesso: true })
-catch (err) {
-  console.error('❌ ERRO COMPLETO:', err)
-  res.status(500).json({
-    erro: err.message || 'Erro interno',
-    detalhe: JSON.stringify(err, Object.getOwnPropertyNames(err))
-  })
-}
+res.status(200).json({ sucesso: true })
+  } catch (err) {
+    console.error('❌ ERRO COMPLETO:', err)
+    res.status(500).json({
+      erro: err.message || 'Erro interno',
+      detalhe: JSON.stringify(err, Object.getOwnPropertyNames(err))
+    })
+  }
 
