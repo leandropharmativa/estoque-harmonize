@@ -1,8 +1,13 @@
 import { google } from 'googleapis'
-import credenciais from '../../credenciais/credenciais.json'
+import fs from 'fs'
+import path from 'path'
 
 export default async function handler(req, res) {
   try {
+    const caminho = path.resolve(process.cwd(), 'credenciais/credenciaisReais.json')
+    const raw = fs.readFileSync(caminho, 'utf-8')
+    const credenciais = JSON.parse(raw)
+
     const auth = new google.auth.GoogleAuth({
       credentials: credenciais,
       scopes: ['https://www.googleapis.com/auth/spreadsheets'],
