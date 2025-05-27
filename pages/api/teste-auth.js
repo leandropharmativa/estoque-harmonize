@@ -1,5 +1,5 @@
 import { google } from 'googleapis'
-const credenciais = require('../../../credenciais/credenciaisReais.json') // NOTA: \n reais
+import credenciais from '../../credenciais/credenciais.json'
 
 export default async function handler(req, res) {
   try {
