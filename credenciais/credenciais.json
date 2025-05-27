@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "bamboo-zephyr-297314",
+  "private_key_id": "364a95dabae32a7fcd85501d266a64ff0a9f3183",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKjOnv7ny6jm44\n2TTFQZnVs4Mzv928Y2duKNunSJzu65cGV3GJTzDof1GIZp/eBj8tFg/SXbBdd26s\n...[cortado para brevidade]...\n-----END PRIVATE KEY-----\n",
+  "client_email": "planilha-estoque@bamboo-zephyr-297314.iam.gserviceaccount.com",
+  "client_id": "101236003381008363776",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/planilha-estoque%40bamboo-zephyr-297314.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
