@@ -1,5 +1,5 @@
 import { google } from 'googleapis'
-import credenciais from '../../../credenciais/credenciais.json'
+import credenciais from '../../credenciais/credenciais.json'
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).send('Método não permitido')
